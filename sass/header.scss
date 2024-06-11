@@ -1,0 +1,59 @@
+@use 'variables' as var;
+@use 'mixins' as mx;
+
+
+.header {
+    background-color: var.$button-w; 
+    color: var.$button-b;
+    padding: 10px 0; 
+}
+
+.containerh {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 24px;
+    .imagem {
+        width: 100px; 
+        height: 50px; 
+    }
+}
+
+.menu ul {
+    list-style: none; 
+    display: flex; 
+}
+
+.menu li {
+    margin-right: 20px; 
+}
+
+.menu a {
+    text-decoration: none;
+    color: inherit; 
+}
+
+.search-heart-bag {
+    display: flex;
+    align-items: center; 
+    gap: 20px;
+}
+
+.search-bar {
+    padding: 5px; 
+    margin-right: 10px; 
+    border-radius: 30px;
+}
+
+.fa-search,
+.fa-heart,
+.fa-shopping-bag {
+    font-size: 20px; 
+    margin-left: 10px; 
+    cursor: pointer; 
+}

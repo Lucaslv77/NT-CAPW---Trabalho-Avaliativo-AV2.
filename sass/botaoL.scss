@@ -1,0 +1,47 @@
+@use 'variables' as var;
+@use 'mixins' as mx;
+
+
+.containerbt {
+    
+    #texto {
+    display: none;
+    background-color: var.$button-or; 
+    color: var.$button-w; 
+    padding: 20px; 
+    font-size: 20px;
+    margin-right: auto; 
+    }
+
+   .botaol {
+    background-color: var.$button-or; 
+    border: none;
+    color: var.$button-w;
+    padding: 10px; 
+    width: 100%; 
+    box-sizing: border-box; 
+    display: flex;
+    justify-items: left;   
+    text-align: left;
+    gap: 90%;
+    cursor: pointer;
+    border-radius: 30px;
+   }
+
+   .botaol .seta {
+    border: solid var.$button-w;
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 6px;
+    margin-left: 10px;
+    transition: transform 0.2s ease;
+   }
+
+   .direita {
+    transform: rotate(-45deg);
+   }
+
+  .baixo {
+    transform: rotate(45deg);
+  }
+}

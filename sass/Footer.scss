@@ -1,0 +1,74 @@
+@use 'variables' as var;
+@use 'mixins' as mx;
+
+
+.footer {
+    background-color: var.$button-b;
+    color: var.$button-w;
+    margin-top: 16px;
+    padding-top: 16px;
+}
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+
+}
+
+.footer .section {
+    width: calc(25% - 32px);
+    margin: 16px 0; 
+}
+
+.footer .section-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.footer .section-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer .section-list li {
+    margin-bottom: 8px;
+}
+
+.footer .section-list li a {
+    color: var.$button-w;
+    text-decoration: none;
+}
+
+.footer .section-list li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color: var.$button-w;
+}
+
+.footer .footer-text,
+.footer .footer-team {
+    font-size: 0.875rem;
+    margin: 0;
+    color: var.$button-w;
+}
+
+.footer .footer-team {
+    margin-top: 8px;
+}

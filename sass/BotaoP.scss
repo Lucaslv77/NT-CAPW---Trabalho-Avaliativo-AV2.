@@ -1,0 +1,10 @@
+@use 'variables' as var;
+@use 'mixins' as mx;
+
+.botaop {
+    background-color: var.$button-b; 
+    border: none;
+    color: var.$button-w;
+    padding: 15px 32px;
+    @include mx.blackwhite();
+}
